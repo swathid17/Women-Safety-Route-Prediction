@@ -2,19 +2,19 @@
 
 Route safety prediction system using risk scoring + ML to recommend safer paths.
 
-**Project Overview**
+## Project Overview
 
 The Women Safety Route Prediction System is a web-based application that analyzes crime data and predicts the safety level of a selected route.
 The system helps users choose safer travel paths by evaluating crime density, historical incidents, and machine learning predictions.
 
-**Objectives**
+## Objectives
 
 1. Provide safer route recommendations.
 2. Analyze crime data using Machine Learning.
 3. Display safety levels in real-time.
 4. Assist women in making informed travel decisions.
 
-**How It Works**
+## How It Works
 
 1. User selects start and destination location.
 2. Route coordinates are generated.
@@ -25,7 +25,7 @@ The system helps users choose safer travel paths by evaluating crime density, hi
    - Medium Risk
    - High Risk
 
-**System Architecture**
+## System Architecture
 
 1. Frontend (Azure Maps UI)
 2. Flask API Backend
@@ -33,7 +33,7 @@ The system helps users choose safer travel paths by evaluating crime density, hi
 4. Machine Learning Model (Decision Tree)
 5. Safety Prediction Output
 
-**Tech Stack**
+## Tech Stack
 
 **Frontend**
 
@@ -57,7 +57,7 @@ The system helps users choose safer travel paths by evaluating crime density, hi
 • Encoders for categorical features
 
 
-**Dataset Used**
+## Dataset Used
 
 1. Tamil Nadu Women Crime Dataset
 
@@ -65,12 +65,12 @@ The system helps users choose safer travel paths by evaluating crime density, hi
 
 3. Preprocessed and labeled dataset
 
-**Security Note**
+## Security Note
 
 API keys are not stored in the repository.
 Use environment variables for secure key handling.
 
-**Future Improvements**
+## Future Improvements
 
 - Real-time crime data integration
 - Mobile application version

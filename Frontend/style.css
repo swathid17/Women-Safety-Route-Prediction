@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  padding: 15px;
+  background-color: #4a90e2;
+  color: white;
+  margin: 0;
+}
+
+/* ✅ controls always above map */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 15px;
+
+  position: sticky;   /* stays visible while scrolling */
+  top: 0;
+  z-index: 9999;      /* IMPORTANT: above map canvas */
+  background: #f9f9f9;
+  padding: 10px;
+}
+
+.toggleWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  pointer-events: auto; /* IMPORTANT */
+}
+
+button:hover { background-color: #357ABD; }
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#myMap {
+  width: 100%;
+  height: 500px;
+  border: 2px solid #4a90e2;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 1000px;
+  position: relative;
+  z-index: 1;       /* map below controls */
+}
+
+/* Toggle switch */
+.switch { position: relative; display: inline-block; width: 50px; height: 25px; }
+.switch input { display: none; }
+.slider {
+  position: absolute; cursor: pointer; background-color: #ccc;
+  border-radius: 25px; top: 0; left: 0; right: 0; bottom: 0; transition: .4s;
+}
+.slider:before {
+  content: ""; position: absolute; height: 19px; width: 19px;
+  left: 3px; bottom: 3px; background-color: white; border-radius: 50%; transition: .4s;
+}
+input:checked + .slider { background-color: #4a90e2; }
+input:checked + .slider:before { transform: translateX(24px); }
+
+/* Alert box */
+
+
+/* Night UI theme only */
+body.night-ui { background: #0b1220; color: #e6edf7; }
+body.night-ui .controls {
+  background: rgba(20, 30, 55, 0.95);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+body.night-ui input,
+body.night-ui button {
+  background: #121a2d;
+  color: #e6edf7;
+  border: 1px solid rgba(255,255,255,0.15);
+}

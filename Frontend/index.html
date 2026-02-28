@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Women Safety Route Prediction</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2>Women Safety Route Prediction System</h2>
+
+  <div class="controls">
+    <div class="toggleWrap">
+      <label class="switch">
+        <input type="checkbox" id="womenModeToggle">
+        <span class="slider round"></span>
+      </label>
+      <span>Women Safety Mode</span>
+    </div>
+
+    <input type="text" id="sourceInput" placeholder="Enter Source">
+    <input type="text" id="destinationInput" placeholder="Enter Destination">
+
+    <button id="routeBtn" type="button">Show Route</button>
+    <button id="alternateRouteBtn" type="button">Show Alternate Route</button>
+    <button id="dayNightBtn" type="button">Switch to Night Mode</button>
+  </div>
+
+
+
+  <div id="myMap"></div>
+
+  <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
